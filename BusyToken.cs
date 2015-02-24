@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BusyTokenSource
+namespace NobleMuffins.Busy
 {
 	internal class BusyToken: IDisposable
 	{

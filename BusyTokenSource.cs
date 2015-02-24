@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace BusyTokenSource
+namespace NobleMuffins.Busy
 {
 	public class BusyTokenSource
 	{
