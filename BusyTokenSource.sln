@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusyTokenSource", "BusyTokenSource.csproj", "{34435845-DBA7-46FC-BE3A-9F3E90C69837}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusyTokenSource.Unity3D", "BusyTokenSource.Unity3D.csproj", "{16AAFCD8-CC9B-4D6F-8397-28C7AC591010}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +15,9 @@ Global
 		{34435845-DBA7-46FC-BE3A-9F3E90C69837}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34435845-DBA7-46FC-BE3A-9F3E90C69837}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34435845-DBA7-46FC-BE3A-9F3E90C69837}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16AAFCD8-CC9B-4D6F-8397-28C7AC591010}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16AAFCD8-CC9B-4D6F-8397-28C7AC591010}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16AAFCD8-CC9B-4D6F-8397-28C7AC591010}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16AAFCD8-CC9B-4D6F-8397-28C7AC591010}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

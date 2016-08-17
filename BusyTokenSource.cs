@@ -7,7 +7,7 @@ namespace NobleMuffins.Busy
 	{
 		private readonly LinkedList<BusyToken> liveTokens = new LinkedList<BusyToken>();
 
-		public event Action StateChanged;
+		public event EventHandler<BusynessEventArgs> StateChanged;
 
 		public bool IsBusy {
 			get {
@@ -33,14 +33,14 @@ namespace NobleMuffins.Busy
 		{
 			lock (liveTokens) {
 				liveTokens.Remove (token);
+				RaiseStateChanged(IsBusy);
 			}
-			RaiseStateChanged ();
 		}
 
-		private void RaiseStateChanged()
+		private void RaiseStateChanged(bool isBusy)
 		{
 			if (StateChanged != null) {
-				StateChanged ();
+				StateChanged (this, new BusynessEventArgs(isBusy));
 			}
 		}
 
@@ -49,8 +49,8 @@ namespace NobleMuffins.Busy
 			var token = new BusyToken (HandleTokenDisposal, description);
 			lock (liveTokens) {
 				liveTokens.AddLast (token);
+				RaiseStateChanged(IsBusy);
 			}
-			RaiseStateChanged ();
 			return token;
 		}
 	}
