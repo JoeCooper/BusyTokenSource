@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace NobleMuffins.Busy
+namespace Busyness
 {
-	public class BusynessEventArgs: EventArgs
+	public class BusynessEventArgs : EventArgs
 	{
 		public BusynessEventArgs(bool isBusy)
 		{
