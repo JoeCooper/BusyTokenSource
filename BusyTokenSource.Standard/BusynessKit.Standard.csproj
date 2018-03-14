@@ -2,6 +2,21 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.0</TargetFramework>
+    <ReleaseVersion>1.0</ReleaseVersion>
+    <PackageId>busynessKit</PackageId>
+    <Authors>Joseph Cooper</Authors>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageLicenseUrl>https://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+    <Owners>Joseph Cooper</Owners>
+    <PackageProjectUrl>https://github.com/JoeCooper/BusyTokenSource</PackageProjectUrl>
+    <Summary>Busyness Kit provides a thread-safe class responsible for knowing if any of its clients are currently busy doing something.</Summary>
+    <PackageTags>busy, busyness</PackageTags>
+    <Title>Busyness Kit</Title>
+    <Description>Busyness Kit provides a thread-safe class responsible for knowing if any of its clients are currently busy doing something.</Description>
+    <PackOnBuild>true</PackOnBuild>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.0" />
+  </ItemGroup>
 </Project>
